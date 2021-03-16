@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Indie+Flower&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url('https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+
+    /* background-image:url('https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80'); */
+    background-size:100%;
+}
+
+table{
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid darksalmon;
+
+}
+
+table td{
+    width: 110px;
+    border: 1px solid transparent;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.dis01{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.weekday{
+    border:1px docted #333;
+    border-collapse:separate;
+
+}
+
+.container{
+    margin-top:50px;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    border:1px solid  transparent;
+    border-radius:60px;
+    padding:30px;
+    background-color:#FEFEFE;
+    box-shadow:9px 11px 11px 3px black;
+    /* opacity:0.97; */
+}
+
+
+
+.box2{
+    margin:0px;           
+    padding-top:50px;
+    border:1px solid transparent;
+    width:49%;
+    height:750px;
+}
+
+.weekend{
+    color:red;
+}
+
+.weekday{
+    font-family: 'Itim', cursive;
+}
+
+
+.pyear{
+    font-family: 'Indie Flower', cursive;
+    font-size:3rem;
+    line-height:36px;
+    font-weight:1000;
+    color:#1A3A32;
+    }
+
+h1{
+    font-family: 'Itim', cursive;
+    /* text-decoration:underline;   */
+    font-weight:600;
+}
+.pmonth{
+    font-family: 'Caveat', cursive;
+    font-size:2.5rem;
+    line-height:36px;
+}
+
+.hi_1,.hi_2{
+    display:flex;
+    position:absolute;
+    width:100px;
+    height:70px;
+    background:linear-gradient(68deg, rgba(38,48,48,1) 0%, rgba(207,154,101,1) 28%, rgba(156,93,31,1) 49%, rgba(136,101,66,1) 69%, rgba(55,29,5,1) 100%);
+    border:1px solid transparent;
+    border-radius:0 0 20% 20%;
+    z-index:7;
+    box-shadow:4px 3px 6px 0px black;
+}
+
+.hi_1{
+    left:250px;
+    top:-50px;
+}
+.hi_2{
+    
+    right:250px;
+    top:-50px;
+}
+
+.m_1,.m_2{
+    display:flex;
+    position:absolute;
+    width:30px;
+    height:10px;
+    border:1px solid transparent;
+    border-radius:50%;
+    z-index:8;
+    background:linear-gradient(68deg, rgba(255,255,255,1) 0%, rgba(154,154,154,1) 28%, rgba(249,249,249,1) 49%, rgba(147,147,147,1) 69%, rgba(111,111,111,1) 100%);
+    box-shadow:4px 3px 6px 0px black;
+}
+
+.m_1{
+    left:285px;
+    top:-3px;
+}
+.m_2{
+    right:285px;
+    top:-3px;
+}
+
+.under_word{
+    display:flex;
+    position:absolute;
+    text-align:center;
+    margin-top:100px;
+    color:#333;
+    font-family: 'Pacifico', cursive;
+    font-size:15rem;
+    transform:rotate(350deg);
+    overflow:visible;
+    opacity:0.8;
+}
+
+.coffee_cup{
+
+    display:flex;
+    position:absolute;
+    z-index:10;
+    right:-180px;
+    bottom:-100px;
+    transform:scale(0.8,0.8);
+    overflow:visible;
+
+}
+
+.everyholiday{
+    
+    
+    display: flex;
+    flex-direction:column;
+    position:absolute;
+    text-align:left;
+    margin: 0;
+    color: #1A3A32;
+    z-index: 11;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: 'Itim', cursive;
+    /* text-align:center; */
+    top:150PX;
+    left:110PX;
+
+}
+
+.smoke{
+    /* background:#333; */
+    z-index:11;
+    width:0px;
+    height:100px;
+    display:flex;
+    position:absolute;
+    right:90px;
+    bottom:180px;
+    transform:scale(0.2,1.4);
+    animation-name:smoke_down;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    transition-timing-function: ease;
+    animation-iteration-count:infinite;
+}
+
+@keyframes smoke_down{
+    from{       
+        transform:translate(0) rotate(0) scale(0.3,2);
+    }
+    40%{
+        transform:translateY(-90px) rotate(5deg) scale(0.3,2.6);
+    }
+
+    50%{
+        transform:translateY(-90px) rotate(3deg) scale(0.3,2.6);
+    }
+
+    75%{
+        transform:translateY(-90px) rotate(3deg) scale(0.3,2.6);
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
+}
+
+
+.forpd{
+
+    padding:0;
+    margin:0;
+
+}
